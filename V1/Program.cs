@@ -1,6 +1,8 @@
-﻿abstract class Figure
+using System;
+
+abstract class Figure
 {
-    public virtual double Area()
+    public virtual double CalculateArea()
     {
         return 0;
     }
@@ -8,7 +10,7 @@
 
 class Rectangle(double a, double b) : Figure
 {
-    public override double Area()
+    public override double CalculateArea()
     {
         return a * b;
     }
@@ -16,7 +18,7 @@ class Rectangle(double a, double b) : Figure
 
 class Circle(double r) : Figure
 {
-    public override double Area()
+    public override double CalculateArea()
     {
         return Math.PI * r * r;
     }
@@ -24,7 +26,7 @@ class Circle(double r) : Figure
 
 class RightTriangle(double a, double b) : Figure
 {
-    public override double Area()
+    public override double CalculateArea()
     {
         return 0.5 * a * b;
     }
@@ -32,7 +34,7 @@ class RightTriangle(double a, double b) : Figure
 
 class Trapezoid(double a, double b, double h) : Figure
 {
-    public override double Area()
+    public override double CalculateArea()
     {
         return 0.5 * (a + b) * h;
     }
@@ -52,7 +54,7 @@ class Program
 
         foreach (var figure in figures)
         {
-            Console.WriteLine(figure.Area());
+            Console.WriteLine("Area: "figure.CalculateArea());
         }
     }
 }
