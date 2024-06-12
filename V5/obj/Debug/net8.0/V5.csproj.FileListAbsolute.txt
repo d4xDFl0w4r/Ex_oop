@@ -1,0 +1,15 @@
+/home/d4xdfl0w4r/Repositories/Ex_oop/V5/bin/Debug/net8.0/V5
+/home/d4xdfl0w4r/Repositories/Ex_oop/V5/bin/Debug/net8.0/V5.deps.json
+/home/d4xdfl0w4r/Repositories/Ex_oop/V5/bin/Debug/net8.0/V5.runtimeconfig.json
+/home/d4xdfl0w4r/Repositories/Ex_oop/V5/bin/Debug/net8.0/V5.dll
+/home/d4xdfl0w4r/Repositories/Ex_oop/V5/bin/Debug/net8.0/V5.pdb
+/home/d4xdfl0w4r/Repositories/Ex_oop/V5/obj/Debug/net8.0/V5.GeneratedMSBuildEditorConfig.editorconfig
+/home/d4xdfl0w4r/Repositories/Ex_oop/V5/obj/Debug/net8.0/V5.AssemblyInfoInputs.cache
+/home/d4xdfl0w4r/Repositories/Ex_oop/V5/obj/Debug/net8.0/V5.AssemblyInfo.cs
+/home/d4xdfl0w4r/Repositories/Ex_oop/V5/obj/Debug/net8.0/V5.csproj.CoreCompileInputs.cache
+/home/d4xdfl0w4r/Repositories/Ex_oop/V5/obj/Debug/net8.0/V5.sourcelink.json
+/home/d4xdfl0w4r/Repositories/Ex_oop/V5/obj/Debug/net8.0/V5.dll
+/home/d4xdfl0w4r/Repositories/Ex_oop/V5/obj/Debug/net8.0/refint/V5.dll
+/home/d4xdfl0w4r/Repositories/Ex_oop/V5/obj/Debug/net8.0/V5.pdb
+/home/d4xdfl0w4r/Repositories/Ex_oop/V5/obj/Debug/net8.0/V5.genruntimeconfig.cache
+/home/d4xdfl0w4r/Repositories/Ex_oop/V5/obj/Debug/net8.0/ref/V5.dll
