@@ -1,0 +1,7 @@
+D:\Users\user\Documents\GitHub\Ex_oop\V6\V6\bin\Debug\V6.exe.config
+D:\Users\user\Documents\GitHub\Ex_oop\V6\V6\bin\Debug\V6.exe
+D:\Users\user\Documents\GitHub\Ex_oop\V6\V6\bin\Debug\V6.pdb
+D:\Users\user\Documents\GitHub\Ex_oop\V6\V6\obj\Debug\V6.csproj.AssemblyReference.cache
+D:\Users\user\Documents\GitHub\Ex_oop\V6\V6\obj\Debug\V6.csproj.CoreCompileInputs.cache
+D:\Users\user\Documents\GitHub\Ex_oop\V6\V6\obj\Debug\V6.exe
+D:\Users\user\Documents\GitHub\Ex_oop\V6\V6\obj\Debug\V6.pdb
