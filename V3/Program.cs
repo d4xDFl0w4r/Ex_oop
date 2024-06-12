@@ -17,7 +17,11 @@ class Ellipse(double a, double b) : Curve
 {
     public override double CalculateY(double x)
     {
-        return Math.Sqrt(1 - (x * x) / (a * a)) * b;
+        if (a * a < x * x)
+        {
+            throw new ArgumentException("x (" + x + ") must be in [" + -a + ";" + a + "]");
+        }
+        return b / a * Math.Sqrt(a * a - x * x);
     }
 }
 
@@ -25,7 +29,11 @@ class Hyperbola(double a, double b) : Curve
 {
     public override double CalculateY(double x)
     {
-        return Math.Sqrt(x * x / (a * a) - 1) * b;
+        if (x * x < a * a)
+        {
+            throw new ArgumentException("x (" + x + ") must be in (-inf; " + -a + "] U [" + a + ";inf)");
+        }
+        return b / a * Math.Sqrt(x * x - a * a);
     }
 }
 
@@ -36,13 +44,13 @@ class Program
         var curves = new Curve[]
         {
             new Line(2, 3),
-            new Ellipse(2, 3),
+            new Ellipse(6, 8),
             new Hyperbola(2, 3)
         };
 
         foreach (var curve in curves)
         {
-            Console.WriteLine("y: " + curve.CalculateY(2));
+            Console.WriteLine("y: " + curve.CalculateY(4));
         }
     }
 }
