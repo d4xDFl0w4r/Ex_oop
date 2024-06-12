@@ -1,0 +1,7 @@
+D:\Users\user\Documents\GitHub\Ex_oop\V2\V2\bin\Debug\V2.exe.config
+D:\Users\user\Documents\GitHub\Ex_oop\V2\V2\bin\Debug\V2.exe
+D:\Users\user\Documents\GitHub\Ex_oop\V2\V2\bin\Debug\V2.pdb
+D:\Users\user\Documents\GitHub\Ex_oop\V2\V2\obj\Debug\V2.csproj.AssemblyReference.cache
+D:\Users\user\Documents\GitHub\Ex_oop\V2\V2\obj\Debug\V2.csproj.CoreCompileInputs.cache
+D:\Users\user\Documents\GitHub\Ex_oop\V2\V2\obj\Debug\V2.exe
+D:\Users\user\Documents\GitHub\Ex_oop\V2\V2\obj\Debug\V2.pdb
