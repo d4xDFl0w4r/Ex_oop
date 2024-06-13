@@ -1,0 +1,15 @@
+/home/d4xdfl0w4r/Repositories/Ex_oop/V13/bin/Debug/net8.0/V13
+/home/d4xdfl0w4r/Repositories/Ex_oop/V13/bin/Debug/net8.0/V13.deps.json
+/home/d4xdfl0w4r/Repositories/Ex_oop/V13/bin/Debug/net8.0/V13.runtimeconfig.json
+/home/d4xdfl0w4r/Repositories/Ex_oop/V13/bin/Debug/net8.0/V13.dll
+/home/d4xdfl0w4r/Repositories/Ex_oop/V13/bin/Debug/net8.0/V13.pdb
+/home/d4xdfl0w4r/Repositories/Ex_oop/V13/obj/Debug/net8.0/V13.GeneratedMSBuildEditorConfig.editorconfig
+/home/d4xdfl0w4r/Repositories/Ex_oop/V13/obj/Debug/net8.0/V13.AssemblyInfoInputs.cache
+/home/d4xdfl0w4r/Repositories/Ex_oop/V13/obj/Debug/net8.0/V13.AssemblyInfo.cs
+/home/d4xdfl0w4r/Repositories/Ex_oop/V13/obj/Debug/net8.0/V13.csproj.CoreCompileInputs.cache
+/home/d4xdfl0w4r/Repositories/Ex_oop/V13/obj/Debug/net8.0/V13.sourcelink.json
+/home/d4xdfl0w4r/Repositories/Ex_oop/V13/obj/Debug/net8.0/V13.dll
+/home/d4xdfl0w4r/Repositories/Ex_oop/V13/obj/Debug/net8.0/refint/V13.dll
+/home/d4xdfl0w4r/Repositories/Ex_oop/V13/obj/Debug/net8.0/V13.pdb
+/home/d4xdfl0w4r/Repositories/Ex_oop/V13/obj/Debug/net8.0/V13.genruntimeconfig.cache
+/home/d4xdfl0w4r/Repositories/Ex_oop/V13/obj/Debug/net8.0/ref/V13.dll
