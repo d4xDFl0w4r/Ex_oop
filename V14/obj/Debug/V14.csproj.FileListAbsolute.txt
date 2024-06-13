@@ -1,0 +1,7 @@
+D:\Users\user\Documents\GitHub\Ex_oop\V14\bin\Debug\V14.exe.config
+D:\Users\user\Documents\GitHub\Ex_oop\V14\bin\Debug\V14.exe
+D:\Users\user\Documents\GitHub\Ex_oop\V14\bin\Debug\V14.pdb
+D:\Users\user\Documents\GitHub\Ex_oop\V14\obj\Debug\V14.csproj.AssemblyReference.cache
+D:\Users\user\Documents\GitHub\Ex_oop\V14\obj\Debug\V14.csproj.CoreCompileInputs.cache
+D:\Users\user\Documents\GitHub\Ex_oop\V14\obj\Debug\V14.exe
+D:\Users\user\Documents\GitHub\Ex_oop\V14\obj\Debug\V14.pdb
