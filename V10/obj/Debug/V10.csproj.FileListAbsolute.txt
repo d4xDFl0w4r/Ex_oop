@@ -1,0 +1,7 @@
+D:\Users\user\Documents\GitHub\Ex_oop\V10\bin\Debug\V10.exe.config
+D:\Users\user\Documents\GitHub\Ex_oop\V10\bin\Debug\V10.exe
+D:\Users\user\Documents\GitHub\Ex_oop\V10\bin\Debug\V10.pdb
+D:\Users\user\Documents\GitHub\Ex_oop\V10\obj\Debug\V10.csproj.AssemblyReference.cache
+D:\Users\user\Documents\GitHub\Ex_oop\V10\obj\Debug\V10.csproj.CoreCompileInputs.cache
+D:\Users\user\Documents\GitHub\Ex_oop\V10\obj\Debug\V10.exe
+D:\Users\user\Documents\GitHub\Ex_oop\V10\obj\Debug\V10.pdb
