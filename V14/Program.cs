@@ -1,12 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 public abstract class equation
 {
-    public virtual void roots_of_the_equation()
+    public virtual void Equation()
+    {
+        return;
+    }
+    public virtual void Roots_of_the_equation()
     {
         return;
     }
@@ -14,88 +14,93 @@ public abstract class equation
 
 public class linear_equations : equation
 {
-    private double x = 0;
-    private double y = 0;
-    private double z = 0;
-    private double coefficient_in_front_of_x = 0;
-    private double coefficient_in_front_of_y = 0;
-    private double coefficient_in_front_of_z = 0;
-    private double addition_to_x = 0;
-    private double addition_to_y = 0;
-    private double addition_to_z = 0;
-    private double answer = 0;
-
-    public linear_equations(double cx, double cy, double cz, double ax, double ay, double az, double a)
+    public linear_equations(double a, double b)
     {
-        coefficient_in_front_of_x = cx;
-        coefficient_in_front_of_y = cy;
-        coefficient_in_front_of_z = cz;
-        addition_to_x = ax;
-        addition_to_y = ay;
-        addition_to_z = az;
-        answer = a;
+        A = a;
+        B = b;
     }
-    public override void roots_of_the_equation()
+    public override void Equation()
     {
-        for (int i = -999999999; i <= 999999999; i++)
-        {
-            for (int j = -999999999; j <= 999999999; j++)
-            {
-                for (int k = -999999999;k <= 999999999; k++)
-                {
-                    if (coefficient_in_front_of_x * (i + addition_to_x) * coefficient_in_front_of_y * (j + addition_to_y) * coefficient_in_front_of_z * (k + addition_to_z) == answer)
-                    {
-                        Console.WriteLine("x =" + i + "y =" + j + "z =" + k);
-                    }
-                }
-            }
-        } 
-        return;
+        Console.WriteLine($"Линейное уравнение: {A}x + {B} = 0");
     }
+    public override void Roots_of_the_equation()
+    {
+        Console.WriteLine($"Корень: {-B/A}");
+    }
+    
+    private double A { get; set; }
+    private double B { get; set; }
 }
 
 public class quadratic_equations : equation
 {
-    private double x = 0;
-    private double coefficient_in_front_of_x2 = 0;
-    private double coefficient_in_front_of_x = 0;
-    private double c = 0;
-    private double answer = 0;
+    public quadratic_equations(double a, double b, double c)
+    {
+        A = a;
+        B = b;
+        C = c;
+    }
 
-    public quadratic_equations(double cx2, double cx, double cc, double a)
+    public override void Equation()
     {
-        coefficient_in_front_of_x2 = cx2;
-        coefficient_in_front_of_x = cx;
-        c = cc;
-        answer = a;
+        Console.WriteLine($"Квадратное уравнение: {A}x^2 + {B}x + {C} = 0");
     }
-    public override void roots_of_the_equation()
+    public override void Roots_of_the_equation()
     {
-        for (int i = -999999999; i <= 999999999; i++)
+        try
         {
-            if((coefficient_in_front_of_x2 * (i*i)) + (coefficient_in_front_of_x * i) + c == answer)
-            {
-                Console.WriteLine("x = " + i);
-            }
+            var discriminant = Discriminant();
         }
+        catch (ArithmeticException err)
+        {
+            Console.Beep();
+            Console.WriteLine(err.Message);
             return;
+        }
+        if (Discriminant() == 0)
+        {
+            Root1 = -B / (2 * A);
+            Console.WriteLine($"Совпадающий корень: {Root1}");
+        }
+        else
+        {
+            Root1 = (-B - Math.Sqrt(Discriminant())) / (2 * A);
+            Root2 = (-B + Math.Sqrt(Discriminant())) / (2 * A);
+            Console.WriteLine($"Корень 1: {Root1}");
+            Console.WriteLine($"Корень 2: {Root2}");
+        }
     }
+
+    private double Discriminant()
+    {
+        double discriminant = B * B - 4 * A * C;
+        if (discriminant < 0)
+        {
+            throw new ArithmeticException("Отрицательный дискриминант, корней нет");
+        }
+        else
+        {
+            return discriminant;
+        }
+    }
+    
+    private double A { get; set; }
+    private double B { get; set; }
+    private double C { get; set; }
+    private double Root1 { get; set; }
+    private double Root2 { get; set; }
 }
 
-namespace V14
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            var l = new linear_equations(1,2,3,1,2,3,0);
-            var q = new quadratic_equations(1,2,3,0);
-
-            Console.WriteLine("Roots of linear equations: ");
-           // l.roots_of_the_equation();
-            Console.WriteLine("Roots of quadratic equations: ");
-            q.roots_of_the_equation();
-            Console.ReadLine();
-        }
+        var l = new linear_equations(2, -30);
+        l.Equation();
+        l.Roots_of_the_equation();
+        
+        var q = new quadratic_equations(5, -6, 1);
+        q.Equation();
+        q.Roots_of_the_equation();
     }
 }
